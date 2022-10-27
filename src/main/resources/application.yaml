@@ -15,5 +15,5 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-
-config-connection with passsword and user
+    service-url:
+      defaultZone: 'http://${ead.serviceRegistry.username}:${ead.serviceRegistry.password}@localhost:8761/eureka'
